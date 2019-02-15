@@ -3414,210 +3414,116 @@
 // --------------------------------
         >
         <[pointer_list_tmsound][SoundObjects][]
+		
+            // wind kias 
             <[soundinput][Airspeed][]
                 <[uint32][InputID][AirspeedIndicatorNeedle.Output]>
             >
             <[soundmapping][FlightVolume][]
                 <[string8][Input][Airspeed.Output]>
-                <[tmvector2d][Map][ (0.0 0.0) (8.0 0.0) (15.0 0.1) (200.0 0.5) ]>
+                <[tmvector2d][Map][ (0.0 0.0) (10.0 0.0) (75.0 1.0) (200.0 2.0) ]>
             >
             <[soundmapping][FlightPitch][]
                 <[string8][Input][Airspeed.Output]>
-                <[tmvector2d][Map][ (0.0 0.66) ( 33.33 1.0 ) (200.0 3.0) ]>
+                <[tmvector2d][Map][ (0.0 0.60) ( 75.0 1.0 ) (200.0 5.2) ]>
             >
-            <[soundloop][WindLoop][]
+            <[soundloop][FlightVolumeLoop][]
                 <[string8][InputVolume][FlightVolume.Output]>
                 <[string8][InputPitch][FlightPitch.Output]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][VelocityID][Fuselage.V]>
-                <[string8][SoundFile][wilga_wind.wav]>
-            >
-            <[soundinput][RotationSpeed][]
-                <[uint32][InputID][RotationSpeed.Output]>
-            >
-            <[soundmapping][RPMPitch1000][]
-                <[string8][Input][RotationSpeed.Output]>
-                <[tmvector2d][Map][ (0.0 0.0) (1.0 0.50) (104.82 1.00) (125.79 1.20) (524.11 1.20) ]>
-            >
-            <[soundmapping][RPMPitch1200][]
-                <[string8][Input][RotationSpeed.Output]>
-                <[tmvector2d][Map][ (0.0 0.00) (104.82 0.83) (125.79 1.00) (157.23 1.25) (524.11 1.25) ]>
-            >
-            <[soundmapping][RPMPitch1500][]
-                <[string8][Input][RotationSpeed.Output]>
-                <[tmvector2d][Map][ (0.0 0.00) (125.79 0.80) (157.23 1.00) (188.68 1.20) (524.11 1.20) ]>
-            >
-            <[soundmapping][RPMPitch1800][]
-                <[string8][Input][RotationSpeed.Output]>
-                <[tmvector2d][Map][ (0.0 0.00) (157.23 0.83) (188.68 1.00) (220.13 1.17) (524.11 1.17) ]>
-            >
-            <[soundmapping][RPMPitch2100][]
-                <[string8][Input][RotationSpeed.Output]>
-                <[tmvector2d][Map][ (0.0 0.00) (188.68 0.86) (220.13 1.00) (246.33 1.12) (524.11 1.12) ]>
-            >
-            <[soundmapping][RPMPitch2350][]
-                <[string8][Input][RotationSpeed.Output]>
-                <[tmvector2d][Map][ (0.0 0.00) (220.13 0.89) (246.33 1.00) (314.47 1.28) (524.11 1.67) ]>
-            >
-            <[soundmapping][RPMVolume1000][]
-                <[string8][Input][RotationSpeed.Output]>
-                <[tmvector2d][Map][ (0.0 0.0) (1.0 0.50) (104.82 1.00) (125.79 0.00) (524.11 0.00) ]>
-            >
-            <[soundmapping][RPMVolume1200][]
-                <[string8][Input][RotationSpeed.Output]>
-                <[tmvector2d][Map][ (0.0 0.00) (104.82 0.00) (125.79 1.00) (157.23 0.00) (524.11 0.00) ]>
-            >
-            <[soundmapping][RPMVolume1500][]
-                <[string8][Input][RotationSpeed.Output]>
-                <[tmvector2d][Map][ (0.0 0.00) (104.82 0.00) (125.79 0.20) (157.23 1.00) (188.68 0.00) (524.11 0.00) ]>
-            >
-            <[soundmapping][RPMVolume1800][]
-                <[string8][Input][RotationSpeed.Output]>
-                <[tmvector2d][Map][ (0.0 0.00) (125.79 0.00) (157.23 0.20) (188.68 1.00) (220.13 0.00) (524.11 0.00) ]>
-            >
-            <[soundmapping][RPMVolume2100][]
-                <[string8][Input][RotationSpeed.Output]>
-                <[tmvector2d][Map][ (0.0 0.00) (188.68 0.00) (220.13 1.00) (246.33 0.00) (524.11 0.00) ]>
-            >
-            <[soundmapping][RPMVolume2350][]
-                <[string8][Input][RotationSpeed.Output]>
-                <[tmvector2d][Map][ (0.0 0.00) (188.68 0.00) (220.13 0.20) (246.33 1.00) (314.47 1.00) (524.11 1.00) ]>
-            >
-            <[soundloop][RPMVolume1000LoopIntern][]
-                <[string8][InputVolume][RPMVolume1000.Output]>
-                <[string8][InputPitch][RPMPitch1000.Output]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][VelocityID][Fuselage.V]>
-                <[string8][SoundFile][wilga_engn1.wav]>
+                <[string8][SoundFile][wind.wav]>
                 <[bool][External][false]>
             >
-            <[soundloop][RPMVolume1200LoopIntern][]
-                <[string8][InputVolume][RPMVolume1200.Output]>
-                <[string8][InputPitch][RPMPitch1200.Output]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][VelocityID][Fuselage.V]>
-                <[string8][SoundFile][wilga_engn1.wav]>
-                <[bool][External][false]>
-            >
-            <[soundloop][RPMVolume1500LoopIntern][]
-                <[string8][InputVolume][RPMVolume1500.Output]>
-                <[string8][InputPitch][RPMPitch1500.Output]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][VelocityID][Fuselage.V]>
-                <[string8][SoundFile][wilga_engn1.wav]>
-                <[bool][External][false]>
-            >
-            <[soundloop][RPMVolume1800LoopIntern][]
-                <[string8][InputVolume][RPMVolume1800.Output]>
-                <[string8][InputPitch][RPMPitch1800.Output]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][VelocityID][Fuselage.V]>
-                <[string8][SoundFile][wilga_engn1.wav]>
-                <[bool][External][false]>
-            >
-            <[soundloop][RPMVolume2100LoopIntern][]
-                <[string8][InputVolume][RPMVolume2100.Output]>
-                <[string8][InputPitch][RPMPitch2100.Output]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][VelocityID][Fuselage.V]>
-                <[string8][SoundFile][wilga_engn1.wav]>
-                <[bool][External][false]>
-            >
-            <[soundloop][RPMVolume2350LoopIntern][]
-                <[string8][InputVolume][RPMVolume2350.Output]>
-                <[string8][InputPitch][RPMPitch2350.Output]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][VelocityID][Fuselage.V]>
-                <[string8][SoundFile][wilga_engn1.wav]>
-                <[bool][External][false]>
-            >
-            <[soundloop][RPMVolume1000LoopExtern][]
-                <[string8][InputVolume][RPMVolume1000.Output]>
-                <[string8][InputPitch][RPMPitch1000.Output]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][VelocityID][Fuselage.V]>
-                <[string8][SoundFile][wilga_engn1.wav]>
-                <[bool][Internal][false]>
-            >
-            <[soundloop][RPMVolume1200LoopExtern][]
-                <[string8][InputVolume][RPMVolume1200.Output]>
-                <[string8][InputPitch][RPMPitch1200.Output]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][VelocityID][Fuselage.V]>
-                <[string8][SoundFile][wilga_engn1.wav]>
-                <[bool][Internal][false]>
-            >
-            <[soundloop][RPMVolume1500LoopExtern][]
-                <[string8][InputVolume][RPMVolume1500.Output]>
-                <[string8][InputPitch][RPMPitch1500.Output]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][VelocityID][Fuselage.V]>
-                <[string8][SoundFile][wilga_engn1.wav]>
-                <[bool][Internal][false]>
-            >
-            <[soundloop][RPMVolume1800LoopExtern][]
-                <[string8][InputVolume][RPMVolume1800.Output]>
-                <[string8][InputPitch][RPMPitch1800.Output]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][VelocityID][Fuselage.V]>
-                <[string8][SoundFile][wilga_engn1.wav]>
-                <[bool][Internal][false]>
-            >
-            <[soundloop][RPMVolume2100LoopExtern][]
-                <[string8][InputVolume][RPMVolume2100.Output]>
-                <[string8][InputPitch][RPMPitch2100.Output]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][VelocityID][Fuselage.V]>
-                <[string8][SoundFile][wilga_engn1.wav]>
-                <[bool][Internal][false]>
-            >
-            <[soundloop][RPMVolume2350LoopExtern][]
-                <[string8][InputVolume][RPMVolume2350.Output]>
-                <[string8][InputPitch][RPMPitch2350.Output]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][VelocityID][Fuselage.V]>
-                <[string8][SoundFile][wilga_engn1.wav]>
-                <[bool][Internal][false]>
-            >
-            <[soundmapping][EngineStartMapping][]
-                <[string8][Input][RotationSpeed.Output]>
-                <[tmvector2d][Map][ (0.0 0.00) (5.0 1.00) (104.82 1.00) ]>
-            >
-            <[soundsingle][EngineStartInternal][]
-                <[string8][InputVolume][EngineStartMapping.Output]>
-                <[string8][InputPitch][1.0]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][VelocityID][Fuselage.V]>
-                <[string8][SoundFile][wilga_star1.wav]>
-                <[float64][Threshold][0.5]>
-                <[uint32][Direction][1]>
-                <[bool][External][false]>
-            >
-            <[soundsingle][EngineStartExternal][]
-                <[string8][InputVolume][EngineStartMapping.Output]>
-                <[string8][InputPitch][1.0]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][VelocityID][Fuselage.V]>
-                <[string8][SoundFile][wilga_star1.wav]>
-                <[float64][Threshold][0.5]>
-                <[uint32][Direction][1]>
-                <[bool][Internal][false]>
-            >
+
+            // slip and angle of attack
             <[soundinput][SideSlip][]
                 <[uint32][InputID][SideSlip.Output]>
             >
-            <[soundmapping][SideSlipVolume][]
+            <[soundmapping][SideSlipIntensity][]
                 <[string8][Input][SideSlip.Output]>
-                <[tmvector2d][Map][ (-30.0 0.3) (0.0 0.0 ) (30.0 0.3) ]>
+                <[tmvector2d][Map][ (0.0 0.0 ) (3.0 0.25) (10.0 1.0) ]>
             >
-            <[soundloop][SideSlipVolumeLoop][]
+            <[soundmapping][AirspeedVolume][]
+                <[string8][Input][Airspeed.Output]>
+                <[tmvector2d][Map][ (5.0 0.0) (15.0 1.0) (30.0 1.5) (200.0 2.0) ]>
+            >
+            <[soundmultiply][SideSlipVolume][]
+                <[string8][Input0][SideSlipIntensity.Output]>
+                <[string8][Input1][AirspeedVolume.Output]>
+            >
+            <[soundmapping][SideSlipPitch][]
+                <[string8][Input][Airspeed.Output]>
+                <[tmvector2d][Map][ (0.0 0.6) ( 33.33 1.0 ) (200.0 2.0) ]>
+            >
+            <[soundloop][SideSlipLoop][]
                 <[string8][InputVolume][SideSlipVolume.Output]>
-                <[string8][InputPitch][1.0]>
-                <[string8][InputPitch][FlightPitch.Output]>
+                <[string8][InputPitch][SideSlipPitch.Output]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][sideslip.wav]>
+                <[bool][External][false]>
             >
+
+            // prop wash 
+            <[soundmapping][RPMPitchWind][]
+                <[string8][Input][RotationSpeed.Output]>
+                <[tmvector2d][Map][ (41.88 0.6) (250.0 1.0) (460.0 2.0) ]>
+            >
+            <[soundmapping][RPMVolumeWind][]
+                <[string8][Input][RotationSpeed.Output]>
+                <[tmvector2d][Map][ (0.00 0.0) (100.00 1.00) (125.79 1.5) (366.88 3.0) ]>
+            >
+            <[soundloop][RPMWindLoop][]
+                <[string8][InputVolume][RPMVolumeWind.Output]>
+                <[string8][InputPitch][RPMPitchWind.Output]>
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][VelocityID][Fuselage.V]>
+                <[string8][SoundFile][prop1.wav]>
+            >
+
+            // starter cranking
+            <[soundinput][IgnitionSoundInput][]
+                <[uint32][InputID][IgnitionSound.Output]>
+            >
+            <[soundmapping][VolumeIgnition][]
+                <[string8][Input][RotationSpeed.Output]>
+                <[tmvector2d][Map][ (0.0 0.0) (5.0 0.8) (20.0 0.8) (30.0 0.0) ]>
+            >
+            <[soundmapping][PitchIgnition][]
+                <[string8][Input][RotationSpeed.Output]>
+                <[tmvector2d][Map][ (0.0 0.0) (10.0 0.3) (20.0 0.5) (30.0 1.2) ]>
+            >
+            <[sound_multi][IgnitionSound][]
+                <[string8][InputTrigger][IgnitionSoundInput.Output]>
+                <[string8][InputVolume][VolumeIgnition.Output]>
+                <[string8][InputPitch][PitchIgnition.Output]>
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][VelocityID][Fuselage.V]>
+                <[string8][SoundFile][star1.wav]>
+            >
+
+            // engine loop 
+            <[soundinput][RotationSpeed][]
+                <[uint32][InputID][RotationSpeed.Output]>
+            >
+            <[soundmapping][RPMPitchRun][]
+                <[string8][Input][RotationSpeed.Output]>
+                <[tmvector2d][Map][ (41.88 0.3) (130.0 1.0) (460.0 2.5) ]>
+            >
+            <[soundmapping][RPMVolumeRun][]
+                <[string8][Input][RotationSpeed.Output]>
+                <[tmvector2d][Map][ (0.00 0.0) (0.40 0.25) (100.00 0.30) (125.79 2.5) (366.88 3.0) ]>
+            >
+            <[soundloop][RPMRunLoop][]
+                <[string8][InputVolume][RPMVolumeRun.Output]>
+                <[string8][InputPitch][RPMPitchRun.Output]>
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][VelocityID][Fuselage.V]>
+               <[string8][SoundFile][engn1.wav]>
+            >
+			
+			// wheels
             <[soundinput][GroundRollLoadTail][]
                 <[uint32][InputID][GroundRollLoadTail.Output]>
             >
@@ -3645,7 +3551,7 @@
                 <[string8][InputPitch][GroundRollPitchTail.Output]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][VelocityID][Fuselage.V]>
-                <[string8][SoundFile][roll_runway.wav]>
+                <[string8][SoundFile][skid_dry.wav]>
             >
             <[soundinput][GroundRollLoadLeft][]
                 <[uint32][InputID][GroundRollLoadLeft.Output]>
@@ -3674,7 +3580,7 @@
                 <[string8][InputPitch][GroundRollPitchLeft.Output]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][VelocityID][Fuselage.V]>
-                <[string8][SoundFile][roll_runway.wav]>
+                <[string8][SoundFile][roll_ground.wav]>
             >
             <[soundinput][GroundRollLoadRight][]
                 <[uint32][InputID][GroundRollLoadRight.Output]>
@@ -3703,7 +3609,57 @@
                 <[string8][InputPitch][GroundRollPitchRight.Output]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][VelocityID][Fuselage.V]>
-                <[string8][SoundFile][roll_runway.wav]>
+                <[string8][SoundFile][roll_ground.wav]>
+            >
+            // flap lever
+            <[soundinput][FlapLeverPullSound][]
+                <[string8][InputID][FlapLeverPullSound.Output]>
+            >
+            <[sound_multi][SoundFlapLeverPull][]
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][VelocityID][Fuselage.V]>
+                <[string8][InputTrigger][FlapLeverPullSound.Output]>
+                <[string8][InputVolume] [0.01]>
+                <[string8][InputPitch]  [0.6]>
+                <[string8][SoundFile][flap.wav]>
+                <[bool][External][false]>
+            >
+            <[soundinput][FlapLeverReleaseSound][]
+                <[string8][InputID][FlapLeverReleaseSound.Output]>
+            >			
+            <[sound_multi][SoundFlapLeverRelease][]
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][VelocityID][Fuselage.V]>
+                <[string8][InputTrigger][FlapLeverReleaseSound.Output]>
+                <[string8][InputVolume] [0.4]>
+                <[string8][InputPitch]  [1.2]>
+                <[string8][SoundFile][flap.wav]>
+                <[bool][External][false]>
+            >				
+            // button and switches
+            <[soundinput][ButtonSound][]
+                <[uint32][InputID][ButtonSound.Output]>
+            >
+            <[sound_multi][SoundButton][]
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][VelocityID][Fuselage.V]>
+                <[string8][InputTrigger][ButtonSound.Output]>
+                <[string8][InputVolume][0.6]>
+                <[string8][InputPitch][1.0]>
+                <[string8][SoundFile][button_small.wav]>
+                <[bool][External][false]>
+            >
+            <[soundinput][SwitchSound][]
+                <[uint32][InputID][SwitchSound.Output]>
+            >
+            <[sound_multi][SoundSwitch][]
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][VelocityID][Fuselage.V]>
+                <[string8][InputTrigger][SwitchSound.Output]>
+                <[string8][InputVolume][0.6]>
+                <[string8][InputPitch][1.5]>
+                <[string8][SoundFile][switch.wav]>
+                <[bool][External][false]>
             >
         >
     >

@@ -618,6 +618,9 @@
             >
             <[input_default][FlapsInput][]
                 <[string8][Input][Controls.Flaps]>
+                <[tmvector2d][Range][ 0.0 1.0 ]>
+                <[uint][Positions][3]>
+                <[float64][Value][0.0]>					
             >
             <[input_default][AileronInput][]
                 <[string8][Input][Controls.Roll.Input]>
@@ -3437,7 +3440,7 @@
         >
         <[pointer_list_tmsound][SoundObjects][]
 		
-            // wind kias 
+            // wind kias 126.0 
             <[soundinput][Airspeed][]
                 <[uint32][InputID][AirspeedIndicatorNeedle.Output]>
             >
@@ -3447,7 +3450,7 @@
             >
             <[soundmapping][FlightPitch][]
                 <[string8][Input][Airspeed.Output]>
-                <[tmvector2d][Map][ (0.0 0.60) ( 75.0 1.0 ) (200.0 5.2) ]>
+                <[tmvector2d][Map][ (0.0 0.60) ( 126.0 1.0 ) (200.0 5.2) ]>
             >
             <[soundloop][FlightVolumeLoop][]
                 <[string8][InputVolume][FlightVolume.Output]>
@@ -3487,10 +3490,10 @@
                 <[bool][External][false]>
             >
 
-            // prop wash 
+            // prop wash rpm_prp 2350.0
             <[soundmapping][RPMPitchWind][]
                 <[string8][Input][RotationSpeed.Output]>
-                <[tmvector2d][Map][ (41.88 0.6) (250.0 1.0) (460.0 2.0) ]>
+                <[tmvector2d][Map][ (41.88 0.6) (235.0 1.0) (460.0 2.0) ]>
             >
             <[soundmapping][RPMVolumeWind][]
                 <[string8][Input][RotationSpeed.Output]>
@@ -3525,13 +3528,13 @@
                 <[string8][SoundFile][star1.wav]>
             >
 
-            // engine loop 
+            // engine loop rpm_eng 2550.0
             <[soundinput][RotationSpeed][]
                 <[uint32][InputID][RotationSpeed.Output]>
             >
             <[soundmapping][RPMPitchRun][]
                 <[string8][Input][RotationSpeed.Output]>
-                <[tmvector2d][Map][ (41.88 0.3) (130.0 1.0) (460.0 2.5) ]>
+                <[tmvector2d][Map][ (41.88 0.3) (255.0 1.0) (460.0 2.5) ]>
             >
             <[soundmapping][RPMVolumeRun][]
                 <[string8][Input][RotationSpeed.Output]>

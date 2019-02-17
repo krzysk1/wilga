@@ -874,9 +874,12 @@
             <[governor][Governor][]
                 <[string8][RotationSpeed][DriveShaft.GetRotationSpeed]>
                 <[string8][SpeedControl][ServoPropSpeed.Output]>
-                <[float64][PitchMinimum][1.52]> //0.0
-                <[float64][PitchMaximum][3.6]>  //1.570796
+                <[float64][PitchMinimum][0.0]>
+                <[float64][PitchMaximum][1.570796]>
             >
+            <[output][BladePitch][]
+                <[string8][Input][Governor.Output]>
+            >			
             <[collisionblade][CollisionPropeller][]
                 <[string8][Body][PropellerBody]>
                 <[string8][Geometry][propellerdisk_19]>
@@ -1605,15 +1608,22 @@
      // Propeller
      //------------------------------
             <[rotatingbodygraphics][Spinner][]
-                <[string8][GeometryList][ engine_2724_2 engine_4008_2 engine_7494_2 engine_4350_2 engine_7836_2 ]>
+                <[string8][GeometryList][ engine_2724_2 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[uint32][AngleID][Propeller.RotationAngle]>
                 <[tmvector3d][Axis][1.0 0.0 0.0]>
                 <[tmvector3d][Pivot][0.0 0.0 0.0]>
             >
-            <[graphics_propeller_blade][PropellerBlade][]
-                <[string8][GeometryList][ engine_5376_2 engine_8862_2 ]>
+            <[graphics_input][BladePitchInput][]
+                <[uint32][InputID][BladePitch.Output]>
+            >
+            <[graphics_mapping][BladePitch][]
+                <[uint32][Input][BladePitchInput.Output]>
+                <[tmvector2d][Map][ (-3.14 -2.0) (0.0 0.0) (3.14 2.0) ]>
+            >			
+            <[graphics_propeller_blade][PropellerBlade0][]
+                <[string8][GeometryList][ engine_8862_2 engine_7836_2 engine_7494_2 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[uint32][AngleID][Propeller.RotationAngle]>
@@ -1622,8 +1632,20 @@
                 <[tmvector3d][Axis][1.0 0.0 0.0]>
                 <[tmvector3d][Pivot][0.0 0.0 0.0]>
                 <[float64][Radius][1.289600]>
-                <[string8][InputPitch][0.0]>
-            >				
+                <[string8][InputPitch][BladePitch.Output]>
+            >
+            <[graphics_propeller_blade][PropellerBlade1][]
+                <[string8][GeometryList][ engine_5376_2 engine_4350_2 engine_4008_2 ]>
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+                <[uint32][AngleID][Propeller.RotationAngle]>
+                <[uint32][RotationSpeedID][Propeller.RotationSpeed]>
+                <[uint32][DamageID][Propeller.Damaged]>
+                <[tmvector3d][Axis][1.0 0.0 0.0]>
+                <[tmvector3d][Pivot][0.0 0.0 0.0]>
+                <[float64][Radius][1.289600]>
+                <[string8][InputPitch][BladePitch.Output]>
+            >			
             <[propellergraphics][Propeller][]
                 <[string8][GeometryList][ propellerdisk_19 ]>
                 <[uint32][PositionID][Fuselage.R]>
@@ -3373,7 +3395,7 @@
                 <[tmvector3d][Axis][1.0 0.0 0.0]>
                 <[tmvector3d][Pivot][0.720905 -0.181272 0.325050]>
             >
-     // Instruments
+		// Instruments
             <[rigidbodygraphics][Wilga_cockpit_407388_12][]
                 <[string8][GeometryList][ wilga_cockpit_349944_12 wilga_cockpit_349980_12 wilga_cockpit_352254_12 
                  wilga_cockpit_358182_12 wilga_cockpit_358218_12 wilga_cockpit_358812_12 
@@ -3385,7 +3407,7 @@
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
             >
-     // OBS knob
+		// OBS knob
             <[graphics_input][Wilga_cockpitInput_56][]
                 <[uint32][InputID][ServoCheck.Output]> //sim/cockpit2/radios/actuators/nav1_obs_deg_mag_pilot
             >

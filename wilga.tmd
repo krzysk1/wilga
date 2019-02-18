@@ -7,9 +7,7 @@
                 <[string8][RotationSpeed0][DriveShaft.RotationSpeed]>
                 <[string8][PowerPosition][ThrottleInput.Output]>
                 <[string8][Airspeed][AirspeedIndicator.IndicatedAirspeed]>
-                <[string8][AirbrakePosition][0.0]>
                 <[string8][BrakePosition][BrakeInput.Output]>
-                <[string8][GearPosition][0.0]>
                 <[string8][FlapPosition][FlapsInput.Output]>
                 <[tmvector2d][FlapPositions][ (0.0 0.00) (0.50 0.21) (1.0 0.44) ]>
                 <[tmvector3d][LookAtPosition][ 0.5 0.0 0.5 ]>
@@ -661,11 +659,17 @@
             >	
             <[input_default][AileronTrimInput][]
                 <[string8][Input][Controls.AileronTrim]>
-                <[tmvector2d][Range][-1.0 1.0]>	
+                <[uint][Positions][201]>
+                <[tmvector2d][Range][ -1.0 1.0 ]>
+                <[float64][Value][0.0]>
+                <[float64][Speed][0.125]>			
             >
             <[input_default][RudderTrimInput][]
                 <[string8][Input][Controls.RudderTrim]>
-                <[tmvector2d][Range][-1.0 1.0]>	
+                <[uint][Positions][201]>
+                <[tmvector2d][Range][ -1.0 1.0 ]>
+                <[float64][Value][0.0]>
+                <[float64][Speed][0.125]>			
             >
             <[servoclassic][ServoCheck][]
                 <[string8][Input][CheckInput.Output]>
@@ -726,7 +730,7 @@
                 <[float64][Speed][10.0]>
                 <[float64][P0][0.0]>
                 <[float64][P1][0.366519]>
-                <[float64][P2][-0.087266]> // Wychylenie lotek: w góre 26°±2° w dół 16°±2°
+                <[float64][P2][-0.087266]> // Wychylenie lotek: up 26°±2° down 16°±2°
                 <[float64][P3][0.0]>
             >
             <[output_free][ServoLeftAileronOutput][]
@@ -748,7 +752,7 @@
                 <[float64][Speed][10.0]>
                 <[float64][P0][0.0]>
                 <[float64][P1][0.488692]>
-                <[float64][P2][-0.174533]> // Wychylenie steru: - w góre 38°±1° - w dół 18°±2°
+                <[float64][P2][-0.174533]> // Wychylenie steru: - up 38°±1° - down 18°±2°
                 <[float64][P3][0.0]>
             >
             <[output_free][ServoElevatorOutput][]
@@ -769,7 +773,7 @@
                 <[string8][Input][RudderInput.Output]>
                 <[float64][Speed][10.0]>
                 <[float64][P0][0.0]>
-                <[float64][P1][-0.453786]>  // Wychylenie steru: w lewo i w prawo po 26°±2°
+                <[float64][P1][-0.453786]>  // Wychylenie steru: left and right 26°±2°
                 <[float64][P2][0.0]>
                 <[float64][P3][0.0]>
             >
@@ -1624,7 +1628,14 @@
             <[graphics_mapping][BladePitch][]
                 <[uint32][Input][BladePitchInput.Output]>
                 <[tmvector2d][Map][ (-3.14 -2.0) (0.0 0.0) (3.14 2.0) ]>
-            >			
+            >
+       //     <[graphics_input][engineInput_2][]
+       //         <[uint32][InputID][ServoPropRPM.Output]> //sim/flightmodel2/engines/prop_pitch_deg
+       //     >
+       //     <[graphics_mapping][engineMapping_184][]
+       //         <[string8][Input][engineInput_2.Output]> //sim/flightmodel2/engines/prop_pitch_deg
+       //         <[tmvector2d][Map][(0.0 0.0) (1.0 0.663225)]>
+       //     >			
             <[graphics_propeller_blade][PropellerBlade0][]
                 <[string8][GeometryList][ engine_8862_2 engine_7836_2 engine_7494_2 ]>
                 <[uint32][PositionID][Fuselage.R]>
@@ -1663,47 +1674,6 @@
                 <[float64][BladePitch][-0.5]>
                 <[float64][RotationSpeedFade][80.0]>
                 <[uint32][NumberStops][0]>
-            >
-            <[graphics_input][engineInput_1][]
-                <[uint32][InputID][Propeller.RotationAngle]> //sim/flightmodel2/engines/prop_rotation_angle_deg[0]
-            >
-            <[graphics_mapping][engineMapping_178][]
-                <[string8][Input][engineInput_1.Output]> //sim/flightmodel2/engines/prop_rotation_angle_deg[0]
-                <[tmvector2d][Map][(0.0 0.0) (1.0 -0.017453)]>
-            >
-            <[hingedbodygraphics][engine_4008_2][]
-      //          <[string8][GeometryList][ engine_4008_2 ]>
-      //           <[string8][GeometryList][ engine_7494_2 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][InputAngle][engineMapping_178.Output]>
-                <[tmvector3d][Axis][-1.0 0.0 0.0]>
-                <[tmvector3d][Pivot][-0.3 0.0 0.0]>
-            >
-            <[graphics_input][engineInput_2][]
-                <[uint32][InputID][ServoPropRPM.Output]> //sim/flightmodel2/engines/prop_pitch_deg
-            >
-            <[graphics_mapping][engineMapping_184][]
-                <[string8][Input][engineInput_2.Output]> //sim/flightmodel2/engines/prop_pitch_deg
-                <[tmvector2d][Map][(0.0 0.0) (1.0 0.663225)]>
-            >
-            <[hingedbodygraphics][engine_5376_2][]
-//            <[string8][GeometryList][ engine_4350_2 engine_5376_2 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][InputAngle][engineMapping_184.Output]>
-                <[tmvector3d][Axis][0.0 0.0 -1.0]>
-                <[tmvector3d][Pivot][1.928274 -0.026167 -0.092153]>
-                <[string8][Graphics][engine_4008_2]>
-            >
-            <[hingedbodygraphics][engine_8868_2][]
-//            <[string8][GeometryList][ engine_7836_2 engine_8862_2 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][InputAngle][engineMapping_184.Output]>
-                <[tmvector3d][Axis][0.0 0.0 1.0]>
-                <[tmvector3d][Pivot][1.941234 -0.002367 0.002156]>
-                <[string8][Graphics][engine_4008_2]>
             >
 // --------------------------------
 // Fuselage
@@ -3018,7 +2988,7 @@
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
             >
-// floor heater
+		// floor heater
             <[movinggraphics][Wilga_cockpit_281040_12][]
                 <[string8][GeometryList][ wilga_cockpit_280776_12 ]>
                 <[uint32][PositionID][Fuselage.R]>
@@ -3026,7 +2996,7 @@
                 <[uint32][AngleID][CabinHeaterSwitch.Output]> //sim/cockpit2/switches/generic_lights_switch[63]
                 <[tmvector3d][Axis][-0.009680 0.0 0.0]>
             >
-// Master De-Ice
+		// Master De-Ice
             <[rigidbodygraphics][Wilga_cockpit_303135_12][]
                 <[string8][GeometryList][ wilga_cockpit_281313_12 wilga_cockpit_281709_12 wilga_cockpit_297285_12]> 
                 <[uint32][PositionID][Fuselage.R]>
@@ -3124,7 +3094,7 @@
                 <[uint32][OrientationID][Fuselage.Q]>
             >
             <[movinggraphics][Wilga_cockpit_329718_12][]
-                <[string8][GeometryList][ wilga_cockpit_329574_12 ]> //Wilga_cockpit_329718_12 ]>
+                <[string8][GeometryList][ wilga_cockpit_329574_12 ]> //wilga_cockpit_329718_12 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[uint32][AngleID][ServoMixture.Output]> //sim/cockpit2/engine/actuators/mixture_ratio[0]

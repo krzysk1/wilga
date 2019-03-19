@@ -3,7 +3,8 @@
         <[int][Version][210]>
         <[vec32array][ContactSpheres][ ( 1.0 1.4 -1.4 0.25) ( 1.0 -1.4 -1.4 0.25) ( -5.76 0.0 -0.77  0.128) ]>
         <[string8][DisplayName][PZL-104 Wilga]>
-        <[string8][DescriptionTextEN][PZL-104 Wilga (Golden Oriole) is a Polish designed and built short-takeoff-and-landing (STOL) Civil Aviation utility aircraft manufactured by PZL "Warszawa-Okęcie". The Wilga has evolved through many ever-improving versions during its continuous production run from 1962 to 2006, when the European Aeronautic Defence and Space Company (EADS) announced on their website that they decided to stop the production of this aircraft. Crew: 1, Capacity: 3, Length: 8.10 m (26 ft 6 in), Wingspan: 11.12 m (36 ft 5 in), Height: 2.96 m (5 ft 8 in), Empty weight: 900 kg (1984 lb), Gross weight: 1300 kg (2868 lb), Powerplant: 1 × Ivchenko AI-14RA air-cooled 9-cylinder radial piston engine, 194 kW (260 hp), Maximum speed: 195 km/h (121 mph), Range: 670 km (416 miles), Service ceiling: 4040 m (13,255 ft), Rate of climb: 5.5 m/s (1082 ft/min). 3D Design: Robert Pearsons.]>
+        <[string8][DescriptionTextEN][PZL-104 Wilga (Golden Oriole) is a Polish designed and built short-takeoff-and-landing (STOL) Civil Aviation utility aircraft manufactured by PZL "Warszawa-Okęcie". The Wilga has evolved through many ever-improving versions during its continuous production run from 1962 to 2006, when the European Aeronautic Defence and Space Company (EADS) announced on their website that they decided to stop the production of this aircraft.
+		Made by Krzysztof Kaniewski. Original 3D model made by Robert Pearsons.]>
         <[string8][DescriptionTextDE][Nur eine blaue Kiste]>
         <[string8][DescriptionTextFR][Seule une boîte bleue]>
         <[string8][DescriptionTextES][Sólo una caja azul]>

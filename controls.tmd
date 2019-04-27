@@ -1,6 +1,128 @@
 <[file][][]
     <[modelmanager][][]
         <[pointer_list_tmcontrol][ControlObjects][]
+			
+            // flight controls
+            <[control_input][StickElevator][]
+                <[uint32][InputID][ElevatorPosition.Output]>
+                <[float64][Scaling][0.174533]>
+            >
+            <[control_input][StickAileron][]
+                <[uint32][InputID][AileronPosition.Output]>
+                <[float64][Scaling][0.436332]>
+            >
+            <[control_rotation][ElevatorTransform][]
+                <[string8][Input][StickElevator.Output]>
+                <[tmvector3d][Axis][0.0 0.999978 -0.006688]>
+                <[tmvector3d][Pivot][0.723080 0.0 -0.107614]>
+            >
+            <[control_rotation][StickTransform][]
+                <[string8][InputTransform][ElevatorTransform.Output]>
+                <[string8][Input][StickAileron.Output]>
+                <[tmvector3d][Axis][1.0 0.0 0.0]>
+                <[tmvector3d][Pivot][0.554730 0.275 0.294540]>
+            >
+            <[control_cylinder][StickGrip][114]
+                <[string8][Type][stick]>
+                <[vector3_float64][R0][ 0.5157 0.2760 0.3972 ]>
+                <[matrix3_float64][B0][ 0.0 0.0 1.0  0.0 1.0 0.0  -1.0 0.0 0.0 ]>
+                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
+                <[vector3_float64][Direction2][ 0.0 -1.0 0.0 ]>
+                <[float64][StepDistance][0.00005]>
+                <[string8][InputTransform][StickTransform.Output]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][Controls.Roll.Input]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][15.0]>
+                >
+                <[control_message][OnStep][]
+                    <[string8][Message][Controls.Pitch.Input]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][0.0004]>
+                >
+                <[float64][Radius][0.016]>
+                <[float64][Length][0.12]>
+            >
+			
+            <[control_rotation][CopilotStickTransform][]
+                <[string8][InputTransform][ElevatorTransform.Output]>
+                <[string8][Input][StickAileron.Output]>
+                <[tmvector3d][Axis][1.0 -0.0 0.0]>
+                <[tmvector3d][Pivot][0.554730 -0.275 0.294540]>
+            >
+            <[control_cylinder][CopilotStickGrip][114]
+                <[string8][Type][stick]>
+                <[vector3_float64][R0][ 0.5157 -0.2760 0.3972 ]>
+                <[matrix3_float64][B0][ 0.0 0.0 1.0  0.0 1.0 0.0  -1.0 0.0 0.0 ]>
+                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
+                <[vector3_float64][Direction2][ 0.0 -1.0 0.0 ]>
+                <[float64][StepDistance][0.00005]>
+                <[string8][InputTransform][CopilotStickTransform.Output]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][Controls.Roll.Input]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][15.0]>
+                >
+                <[control_message][OnStep][]
+                    <[string8][Message][Controls.Pitch.Input]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][0.0004]>
+                >
+                <[float64][Radius][0.016]>
+                <[float64][Length][0.12]>
+            >			
+			
+			// Left throttle lever
+            <[control_input][ThrottleLeverInput][]
+                <[uint32][InputID][ServoThrottle.Output]>
+                <[float64][Scaling][-2.0420352]>
+                <[float64][Offset][0.383972]>				
+            >
+            <[control_rotation][ThrottleLeverTransform][]
+                <[string8][Input][ThrottleLeverInput.Output]>
+                <[tmvector3d][Axis][0.0 -1.0 0.0]>
+                <[tmvector3d][Pivot][0.731930 0.538750 0.142163]>
+            >			
+            <[control_cylinder][ThrottleLever][2]
+                <[string8][Type][lever]>
+                <[vector3_float64][R0][ 0.67 0.5106 0.1877 ]>
+                <[matrix3_float64][B0][ 1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0 ]>
+                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
+                <[float64][StepDistance][0.0016]>
+                <[string8][InputTransform][ThrottleLeverTransform.Output]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Controls.Throttle1]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][0.01]>
+                >
+                <[float64][Radius][0.016]>
+                <[float64][Length][0.031]>
+            >
+			// Right throttle lever
+            <[control_input][RightThrottleLeverInput][]
+                <[uint32][InputID][ServoThrottle.Output]>
+                <[float64][Scaling][0.959931]>						
+            >
+            <[control_rotation][RightThrottleLeverTransform][]
+                <[string8][Input][RightThrottleLeverInput.Output]>
+                <[tmvector3d][Axis][0.0 1.0 0.0]>
+                <[tmvector3d][Pivot][0.764410 0.0 0.150398]>
+            >			
+            <[control_cylinder][RightThrottleLever][2]
+                <[string8][Type][lever]>
+                <[vector3_float64][R0][ 0.6625 -0.02937 0.2359 ]>
+                <[matrix3_float64][B0][ 1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0 ]>
+                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
+                <[float64][StepDistance][0.0018]>
+                <[string8][InputTransform][RightThrottleLeverTransform.Output]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Controls.Throttle1]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][0.01]>
+                >
+                <[float64][Radius][0.016]>
+                <[float64][Length][0.031]>
+            >			
         >
     >
 >

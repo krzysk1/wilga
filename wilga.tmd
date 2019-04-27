@@ -1,10 +1,10 @@
 <[file][][]
 
 	//-------------------------------------
-	// Plane: Polish Built Light Utility STOL Aircraft
-	// Compilation: by krzysk (at) wp.pl
+	// Plane: PZL-104 Wilga
+	// Compilation: Krzysztof Kaniewski
 	// 3D Design: Robert Pearsons
-	// Date: Sat Aug 09 2014; 2019
+	// Date: Sat Aug 09 2014; May 2019
 	//-------------------------------------
 
     <[modelmanager][][]
@@ -200,7 +200,7 @@
                 <[float64][K][200000.0]>
                 <[float64][D][2500.0]>
                 <[float64][Radius][0.25]>
-                <[float64][Width][0.203]>					
+                <[float64][Width][0.23]>					
                 <[float64][RimRadius][0.11]>
                 <[float64][Inflation][451580.8]>				
                 <[string8][Body][LeftGear]>
@@ -213,7 +213,7 @@
                 <[float64][K][250000.0]>
                 <[float64][D][2000.0]>
                 <[float64][Radius][0.25]>
-                <[float64][Width][0.203]>				
+                <[float64][Width][0.23]>				
                 <[float64][RimRadius][0.11]>
                 <[float64][Inflation][451580.8]>				
                 <[string8][Body][RightGear]>
@@ -651,14 +651,14 @@
                 <[string8][Message][Aircraft.Flaps]>
                 <[string8][Qualifiers][maximum]>
             >
-            <[input_default][AileronInput][]
+            <[input_control][AileronInput][]
                 <[string8][Input][Controls.Roll.Input]>
                 <[tmvector2d][Range][-1.0 1.0]>	
             >
             <[output][AileronPosition][]
                 <[string8][Input][AileronInput.Output]>
             >			
-            <[input_default][ElevatorInput][]
+            <[input_control][ElevatorInput][]
                 <[string8][Input][Controls.Pitch.Input]>
                 <[tmvector2d][Range][-1.0 1.0]>	
             >
@@ -1526,6 +1526,7 @@
                 <[tmvector3d][Pivot][0.0 0.0 0.0]>
                 <[float64][Radius][1.2896]>
                 <[string8][InputPitch][BladePitch.Output]>
+                <[tmvector3d][PitchAxis][ 0.0 0.0 1.0 ]>					
             >
             <[graphics_propeller_blade][PropellerBlade1][]
                 <[string8][GeometryList][ engine_5376_2 engine_4350_2 engine_4008_2 ]>
@@ -1538,6 +1539,7 @@
                 <[tmvector3d][Pivot][0.0 0.0 0.0]>
                 <[float64][Radius][1.2896]>
                 <[string8][InputPitch][BladePitch.Output]>
+                <[tmvector3d][PitchAxis][ 0.0 0.0 -1.0 ]>					
             >			
             <[propellergraphics][Propeller][]
                 <[string8][GeometryList][ propellerdisk_19 ]>

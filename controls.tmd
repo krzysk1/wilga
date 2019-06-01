@@ -86,7 +86,7 @@
             <[control_cylinder][ThrottleLever][2]
                 <[string8][Type][lever]>
                 <[vector3_float64][R0][ 0.67 0.5106 0.1877 ]>
-                <[matrix3_float64][B0][ 1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0 ]>
+                <[matrix3_float64][B0][ 0.0 1.0 0.0  -1.0 0.0 0.0  0.0 0.0 1.0 ]>
                 <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
                 <[float64][StepDistance][0.0016]>
                 <[string8][InputTransform][ThrottleLeverTransform.Output]>
@@ -111,8 +111,8 @@
             <[control_cylinder][RightThrottleLever][2]
                 <[string8][Type][lever]>
                 <[vector3_float64][R0][ 0.6625 -0.02937 0.2359 ]>
-                <[matrix3_float64][B0][ 1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0 ]>
-                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
+                <[matrix3_float64][B0][ 0.0 1.0 0.0  -1.0 0.0 0.0  0.0 0.0 1.0 ]>
+                <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
                 <[float64][StepDistance][0.0018]>
                 <[string8][InputTransform][RightThrottleLeverTransform.Output]>
                 <[control_message][OnStep][]

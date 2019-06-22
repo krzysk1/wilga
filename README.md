@@ -59,3 +59,4 @@ Landing ground roll (grass) 650 ft
 Landing over 50' obstacel (grass) 509 ft
 Manufacturer PZL (Polish Aviation Enterprise), Warszawa-Okecie (also known as Pezetel), Al. Krakowska 110/114, 02-256 Warszawa-Okecie, Poland 
 
+Aircraft Technical Data & Specifications http://www.airliners.net/aircraft-data/pzl-warszawaokecie-pzl104-wilga/322

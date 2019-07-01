@@ -303,7 +303,7 @@
                 <[float64][ClAlpha][6.28]>
                 <[float64][CdAlpha][0.4]>
                 <[float64][CmAlpha][0.0]>
-                <[float64][ClFlap][1.5]>
+                <[float64][ClFlap][2.1]>
                 <[float64][CdFlap][0.0]>
                 <[float64][CmFlap][-0.02]>
                 <[float64][Cd0Base][0.005]>
@@ -323,7 +323,7 @@
                 <[float64][ClAlpha][6.28]>
                 <[float64][CdAlpha][0.4]>
                 <[float64][CmAlpha][0.0]>
-                <[float64][ClFlap][1.5]>
+                <[float64][ClFlap][2.1]>
                 <[float64][CdFlap][0.0]>
                 <[float64][CmFlap][-0.02]>
                 <[float64][Cd0Base][0.005]>
@@ -343,7 +343,7 @@
                 <[float64][ClAlpha][6.28]>
                 <[float64][CdAlpha][0.4]>
                 <[float64][CmAlpha][0.0]>
-                <[float64][ClFlap][1.5]>
+                <[float64][ClFlap][2.1]>
                 <[float64][CdFlap][0.0]>
                 <[float64][CmFlap][-0.020]>
                 <[float64][Cd0Base][0.005]>
@@ -1499,7 +1499,11 @@
                 <[tmvector3d][Pivot][1.792645 -0.172589 0.046299]>
             >
 		// Propeller
-
+            <[graphics_input][BladePitchInput][]
+                <[uint32][InputID][BladePitch.Output]>
+                <[float64][Offset][0.0]>
+                <[float64][Scaling][0.628]>		
+            >	
             <[rotatingbodygraphics][Spinner][]
                 <[string8][GeometryList][ engine_2724_2 ]>
                 <[uint32][PositionID][Fuselage.R]>
@@ -1508,13 +1512,6 @@
                 <[tmvector3d][Axis][1.0 0.0 0.0]>
                 <[tmvector3d][Pivot][0.0 0.0 0.0]>
             >
-            <[graphics_input][BladePitchInput][]
-                <[uint32][InputID][BladePitch.Output]>
-            >
-            <[graphics_mapping][BladePitch][]
-                <[uint32][Input][BladePitchInput.Output]>
-                <[tmvector2d][Map][ (-3.14 -2.0) (0.0 0.0) (3.14 2.0) ]>
-            >			
             <[graphics_propeller_blade][PropellerBlade0][]
                 <[string8][GeometryList][ engine_8862_2 engine_7836_2 engine_7494_2 ]>
                 <[uint32][PositionID][Fuselage.R]>
@@ -1525,7 +1522,7 @@
                 <[tmvector3d][Axis][-1.0 0.0 0.0]>
                 <[tmvector3d][Pivot][0.0 0.0 0.0]>
                 <[float64][Radius][1.2896]>
-                <[string8][InputPitch][BladePitch.Output]>
+                <[string8][InputPitch][BladePitchInput.Output]>
                 <[tmvector3d][PitchAxis][ 0.0 0.0 1.0 ]>					
             >
             <[graphics_propeller_blade][PropellerBlade1][]
@@ -1538,7 +1535,7 @@
                 <[tmvector3d][Axis][-1.0 0.0 0.0]>
                 <[tmvector3d][Pivot][0.0 0.0 0.0]>
                 <[float64][Radius][1.2896]>
-                <[string8][InputPitch][BladePitch.Output]>
+                <[string8][InputPitch][BladePitchInput.Output]>
                 <[tmvector3d][PitchAxis][ 0.0 0.0 -1.0 ]>					
             >			
             <[propellergraphics][Propeller][]

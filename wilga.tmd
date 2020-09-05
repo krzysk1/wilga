@@ -4,7 +4,7 @@
 	// Plane: PZL-104 Wilga
 	// Compilation: Krzysztof Kaniewski
 	// 3D Design: Robert Pearsons
-	// Date: 9 Aug 2014; May 2019; Aug 2020
+	// Date: 9 Aug 2014; May 2019; Sep 2020
 	//-------------------------------------
 
     <[modelmanager][][]
@@ -781,7 +781,7 @@
                 <[float64][Speed][10.0]>
                 <[float64][P0][0.0]>
                 <[float64][P1][0.366519]>
-                <[float64][P2][-0.087266]> // Wychylenie lotek: w góre 26°±2° w dół 16°±2°
+                <[float64][P2][-0.087266]>
             >
             <[output_free][ServoLeftAileronOutput][]
                 <[string8][Input][ServoLeftAileron.Output]>
@@ -801,7 +801,7 @@
                 <[float64][Speed][10.0]>
                 <[float64][P0][0.0]>
                 <[float64][P1][0.488692]>
-                <[float64][P2][-0.174533]> // Wychylenie steru: - w góre 38°±1° - w dół 18°±2°
+                <[float64][P2][-0.174533]>
             >
             <[output_free][ServoElevatorOutput][]
                 <[string8][Input][ServoElevator.Output]>
@@ -819,18 +819,17 @@
                 <[string8][Input][RudderTrimmed.Output]>
                 <[float64][Speed][10.0]>
                 <[float64][P0][0.0]>
-                <[float64][P1][-0.453786]>  // Wychylenie steru: w lewo i w prawo po 26°±2°
+                <[float64][P1][-0.453786]>
             >
             <[output_free][ServoRudderOutput][]
                 <[string8][Input][ServoRudder.Output]>
             >
-     //W czasie wychylenia klap lotki wychylaja sie równolegle z klapami o połowe kata wychylenia klap /klapolotki/ - przy wychylonych klapach o 44° - wychylenie lotek w dół wynosi 22°
             <[servolinear][ServoFlaps][]
                 <[string8][Input][FlapsInput.Output]>
                 <[float64][OutputSpeed][0.2]>
                 <[float64][Position][0.0]>
                 <[float64array][InputPosition][ 0.0 0.50 1.0 ]>
-                <[float64array][OutputPosition][ 0.0 0.366519 0.767945 ]> //Wychylenie klap: 21° i 44°.
+                <[float64array][OutputPosition][ 0.0 0.366519 0.767945 ]>
             >
             <[output_free][ServoFlapsOutput][]
                 <[string8][Input][ServoFlaps.Output]>
@@ -897,7 +896,6 @@
             <[output_free][RightBrakePedalOutput][]
                 <[string8][Input][RightBrakePedal.Output]>
             >
-
 
             <[input_binary][ParkingBrakeInput][]
                 <[string8][Input][Controls.ParkingBrake]>
@@ -1496,7 +1494,7 @@
                 <[uint32][RotationSpeedID][Propeller.RotationSpeed]>
                 <[uint32][DamageID][Propeller.Damaged]>
                 <[tmvector3d][Axis][-1.0 0.0 0.0]>
-                <[tmvector3d][Pivot][0.0 0.0 0.0]>
+                <[tmvector3d][Pivot][1.941 0.0 0.0]>
                 <[float64][Radius][1.2896]>
                 <[string8][InputPitch][BladePitchInput.Output]>
                 <[tmvector3d][PitchAxis][ 0.0 0.0 1.0 ]>
@@ -1509,25 +1507,25 @@
                 <[uint32][RotationSpeedID][Propeller.RotationSpeed]>
                 <[uint32][DamageID][Propeller.Damaged]>
                 <[tmvector3d][Axis][-1.0 0.0 0.0]>
-                <[tmvector3d][Pivot][0.0 0.0 0.0]>
+                <[tmvector3d][Pivot][1.941 0.0 0.0]>
                 <[float64][Radius][1.2896]>
                 <[string8][InputPitch][BladePitchInput.Output]>
                 <[tmvector3d][PitchAxis][ 0.0 0.0 -1.0 ]>
             >
-            <[propellergraphics][Propeller][]
-                <[string8][GeometryList][ Propellerdisk19 ]>
+            <[propellergraphics][PropellerDisk][]
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[uint32][AngleID][Propeller.RotationAngle]>
                 <[uint32][RotationSpeedID][Propeller.RotationSpeed]>
                 <[uint32][DamageID][Propeller.Damaged]>
                 <[tmvector3d][Axis][1.0 0.0 0.0]>
-                <[tmvector3d][Pivot][0.0 0.0 0.0]>
-                <[uint32][BladeNumber][2]>
+                <[tmvector3d][Pivot][1.941 0.0 0.0]>
+                <[string8][GeometryList][ Propellerdisk19 ]>
+                <[uint32][BladeNumber][2]>				
                 <[float64][Radius][1.2896]>
                 <[float64][BladePitch][-0.5]>
-                <[float64][RotationSpeedFade][80.0]>
-                <[uint32][NumberStops][0]>
+                <[float64][RotationSpeedFade][40.0]>
+             //   <[tmvector4d][Smurf][ 0.0 1.0 -1.0 0.0 ]>
             >
 
 			// Fuselage

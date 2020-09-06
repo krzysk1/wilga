@@ -1525,7 +1525,7 @@
                 <[float64][Radius][1.2896]>
                 <[float64][BladePitch][-0.5]>
                 <[float64][RotationSpeedFade][40.0]>
-             //   <[tmvector4d][Smurf][ 0.0 1.0 -1.0 0.0 ]>
+                <[tmvector4d][Smurf][ 0.0 1.0 -1.0 0.0 ]>
             >
 
 			// Fuselage

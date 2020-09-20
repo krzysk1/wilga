@@ -29,5 +29,6 @@ For Aerofly FS2 made by Krzysztof Kaniewski. Original 3D model made by Robert Pe
         <[string8][FlapQualifier][]>		
 		<[bool][Airplane][true]>
 		<[bool][Flaps][true]>
+		<[string8][Pilot][pilot_eric]>
     >
 >

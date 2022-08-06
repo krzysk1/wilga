@@ -13,22 +13,23 @@
         >
 		<[float64][WingSpan][11.2]>
 		<[float64][MaximumAirspeed][70.2]>
+		<[float64][MaximumSpeed][70.2]>		
 		<[float64][MinimumAirspeed][21.5]>
         <[float64][ApproachAirspeed][33.3]>
-        <[float64][CruiseAirspeed]  [55.6]>
+        <[float64][CruiseAirspeed][55.6]>
+        <[float64][CruiseSpeed][61.5]>		
 		<[tmvector2d][NormalAirspeedRange][ 21.5 43.2 ]>
 		<[tmvector2d][CautionAirspeedRange][ 43.2 61.5 ]>
 		<[tmvector2d][FlapAirspeedRange][ 21.5 35.1 ]>
         <[float64][MaximumAltitude][4040.0]>
-        <[float64][CruiseAltitude] [1826.0]>
+        <[float64][CruiseAltitude][1826.0]>
         <[float64][MaximumTakeoffMass][1300.0]>
         <[float64][EnginePower][194000.0]>
         <[float64][MaximumRange][670000.0]>
         <[uint][UnitsBuilt][1000]>
         <[uint][EngineCount][1]>
         <[uint][Year][1962]>
-        <[tmvector2d][FlapSettings][ (0.0 0.0) (0.5 0.366519) (1.0 0.767945) ]>
-        <[string8][FlapQualifier][]>		
+        <[tmvector2d][FlapSettings][ (0.0 0.0) (0.5 0.366519) (1.0 0.767945) ]>		
         <[string8][Tags][ airplane piston general_aviation gear tailgear flaps ]>
 		<[string8][Pilot][pilot_eric]>
     >

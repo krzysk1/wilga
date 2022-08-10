@@ -4,7 +4,7 @@
 	// Plane: PZL-104 Wilga for Aerofly FS4
 	// Compilation: Krzysztof Kaniewski
 	// 3D Design: Robert Pearsons
-	// Date: Aug 2014 - Jul 2022
+	// Date: Aug 2014 - Aug 2022
 	//-------------------------------------
 
     <[modelmanager][][]
@@ -1198,12 +1198,26 @@
                 <[uint32][PositionID][LeftWing.R]>
                 <[uint32][OrientationID][LeftWing.Q]>
                 <[tmvector3d][R0][0.279790 5.413740 1.249140]>
-                <[float64][ConeCenter][0.9]>
-                <[float64][ConeCutoff][0.2]>
+                <[tmvector3d][X0][ 1.0 0.0 0.0 ]>
+                <[float64][ConeCenter][1.0]>
+                <[float64][ConeCutoff][0.75]>
                 <[float64][Size][0.059]>
-                <[tmvector3d][Color][ 1.0 0.9 0.8 1.0 ]>
-                <[float64][Brightness][13.0]>
+                <[tmvector3d][Color][ 1.0 0.8 0.7 1.0 ]>
+                <[float64][Brightness][70.0]>
                 <[string8][InputModulation][LandingLightOn.Output]>
+            >
+            <[graphics_conelight][LandingLightCone][]
+                <[uint32][PositionID][LeftWing.R]>
+                <[uint32][OrientationID][LeftWing.Q]>
+                <[tmvector3d][R0][0.279790 5.413740 1.249140]>
+                <[tmvector3d][X0][ 1.0 0.0 -0.1 ]>
+                <[tmvector3d][Color][ 1.0 0.8 0.6 1.0 ]>
+                <[float64][Brightness][20.0]>
+                <[float64][ConeCenter][1.0]>
+                <[float64][ConeCutoff][0.9]>
+                <[string8][InputModulation][LandingLightOn.Output]>
+                <[float64][Size][400.0]>
+                <[float64][Falloff][8.0]>
             >
             // navigation lights
             <[graphics_input][NavigationLightOn][]
@@ -1215,8 +1229,21 @@
                 <[tmvector3d][R0][0.134270 -5.604020 1.213140]>
                 <[tmvector3d][X0][ 0.7 -0.7 0.0 ]>
                 <[tmvector3d][Color][ 0.2 0.7 0.1 1.0 ]>
-                <[float64][Brightness][ 6.0 ]>
+                <[float64][Brightness][ 10.0 ]>
                 <[string8][InputModulation][NavigationLightOn.Output]>
+            >
+            <[graphics_conelight][RightNavLightCone][]
+                <[uint32][PositionID][RightWing.R]>
+                <[uint32][OrientationID][RightWing.Q]>
+                <[tmvector3d][R0][0.134270 -5.604020 1.213140]>
+                <[tmvector3d][X0][ 0.7 -0.7 0.0 ]>
+                <[tmvector3d][Color][ 0.2 0.7 0.1 1.0 ]>
+                <[float64][Brightness][ 0.1 ]>
+                <[float64][ConeCenter][1.0]>
+                <[float64][ConeCutoff][0.0]>
+                <[string8][InputModulation][NavigationLightOn.Output]>
+                <[float64][Size][50.0]>
+                <[float64][Falloff][8.0]>
             >
             <[graphics_pointlight][LeftNavLight][]
                 <[uint32][PositionID][LeftWing.R]>
@@ -1224,14 +1251,40 @@
                 <[tmvector3d][R0][0.096850 5.602360 1.211710]>
                 <[tmvector3d][X0][ 0.7 0.7 0.0 ]>
                 <[tmvector3d][Color][ 1.0 0.3 0.1 1.0 ]>
-                <[float64][Brightness][ 6.0 ]>
+                <[float64][Brightness][ 10.0 ]>
                 <[string8][InputModulation][NavigationLightOn.Output]>
             >
-            <[graphics_input][wingsInput_0][]
+            <[graphics_conelight][LeftNavLightCone][]
+                <[uint32][PositionID][LeftWing.R]>
+                <[uint32][OrientationID][LeftWing.Q]>
+                <[tmvector3d][R0][0.096850 5.602360 1.211710]>
+                <[tmvector3d][X0][ 0.7 0.7 0.0 ]>
+                <[tmvector3d][Color][ 1.0 0.3 0.1 1.0 ]>
+                <[float64][Brightness][ 0.1 ]>
+                <[float64][ConeCenter][1.0]>
+                <[float64][ConeCutoff][-0.91]>
+                <[string8][InputModulation][NavigationLightOn.Output]>
+                <[float64][Size][50.0]>
+                <[float64][Falloff][8.0]>
+            >
+            <[graphics_conelight][LeftNavLightGlow][]
+                <[uint32][PositionID][LeftWing.R]>
+                <[uint32][OrientationID][LeftWing.Q]>
+                <[tmvector3d][R0][0.096850 5.602360 1.211710]>
+                <[tmvector3d][X0][ 0.7 0.7 0.0 ]>
+                <[tmvector3d][Color][ 1.0 0.3 0.1 1.0 ]>
+                <[float64][Brightness][ 0.5 ]>
+                <[float64][ConeCenter][-0.89]>
+                <[float64][ConeCutoff][-0.99]>
+                <[string8][InputModulation][NavigationLightOn.Output]>
+                <[float64][Size][1.0]>
+                <[float64][Falloff][8.0]>
+            >
+            <[graphics_input][RudderInput][]
                 <[uint32][InputID][ServoRudder.Output]>
             >
-            <[graphics_rotation][wingsRotate_1210][]
-                <[string8][Input][wingsInput_0.Output]>
+            <[graphics_rotation][RudderRotate][]
+                <[string8][Input][RudderInput.Output]>
                 <[tmvector3d][Axis][ 0.308919 -1.2e-05 -0.951088 ]>
                 <[tmvector3d][Pivot][-5.107525 0.000007 0.880466]>
             >
@@ -1239,11 +1292,27 @@
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[tmvector3d][R0][-5.798830 0.001372 1.5613]>
-                <[tmvector3d][X0][ -0.7 0.0 0.0 ]>
-                <[tmvector3d][Color][ 1.0 0.9 0.8 1.0 ]>
-                <[float64][Brightness][ 3.0 ]>
-                <[string8][InputTransform][wingsRotate_1210.Output]>
+                <[tmvector3d][X0][ -1.0 0.0 0.0 ]>
+                <[tmvector3d][Color][ 1.0 1.0 1.0 1.0 ]>
+                <[float64][Brightness][6.0]>
+                <[float64][ConeCenter][0.2]>
+                <[float64][ConeCutoff][-0.2]>
+                <[string8][InputTransform][RudderRotate.Output]>
                 <[string8][InputModulation][NavigationLightOn.Output]>
+            >
+            <[graphics_conelight][TailLightCone][]
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+                <[tmvector3d][R0][-5.798830 0.001372 1.5613]>
+                <[tmvector3d][X0][ -1.0 0.0 -0.2 ]>
+                <[tmvector3d][Color][ 1.0 0.8 0.6 1.0 ]>
+                <[float64][Brightness][ 0.1 ]>
+                <[float64][ConeCenter][0.5]>
+                <[float64][ConeCutoff][-0.5]>
+                <[string8][InputTransform][RudderRotate.Output]>
+                <[string8][InputModulation][NavigationLightOn.Output]>
+                <[float64][Size][50.0]>
+                <[float64][Falloff][8.0]>
             >
 			// beacon light
             <[graphics_input][UniversalTime][]
@@ -1267,14 +1336,27 @@
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[tmvector3d][R0][-5.268 0.0 1.77]>
                 <[tmvector3d][X0][ 0.0 0.0 1.0 ]>
-                <[float64][Size][0.05]>
-                <[float64][ConeCenter][0.0]>
-                <[float64][ConeCutoff][-0.2]>
-                <[tmvector3d][Color][ 1.0 0.0 0.0 1.0 ]>
+                <[float64][ConeCenter][-0.5]>
+                <[float64][ConeCutoff][-0.7]>
+                <[tmvector3d][Color][ 1.0 0.4 0.0 1.0 ]>
                 <[string8][InputModulation][BeaconSwitched.Output]>
-                <[string8][InputTransform][wingsRotate_1210.Output]>
+                <[string8][InputTransform][RudderRotate.Output]>
                 <[float64][Size][0.04]>
-                <[float64][Brightness][8.0]>
+                <[float64][Brightness][4.0]>
+            >
+            <[graphics_conelight][BeaconLightCone][]
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+                <[tmvector3d][R0][-5.268 0.0 1.77]>
+                <[tmvector3d][X0][ 0.0 0.0 1.0 ]>
+                <[tmvector3d][Color][ 1.0 0.4 0.0 1.0 ]>
+                <[float64][Brightness][ 0.02 ]>
+                <[float64][ConeCenter][-0.7]>
+                <[float64][ConeCutoff][-0.99]>
+                <[string8][InputModulation][BeaconSwitched.Output]>
+                <[string8][InputTransform][RudderRotate.Output]>
+                <[float64][Size][50.0]>
+                <[float64][Falloff][8.0]>
             >
 
 		// engine

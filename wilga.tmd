@@ -1210,7 +1210,7 @@
                 <[uint32][PositionID][LeftWing.R]>
                 <[uint32][OrientationID][LeftWing.Q]>
                 <[tmvector3d][R0][0.279790 5.413740 1.249140]>
-                <[tmvector3d][X0][ 1.0 0.0 -0.1 ]>
+                <[tmvector3d][X0][ 1.0 0.0 -0.3 ]>
                 <[tmvector3d][Color][ 1.0 0.8 0.6 1.0 ]>
                 <[float64][Brightness][20.0]>
                 <[float64][ConeCenter][1.0]>
@@ -1219,6 +1219,19 @@
                 <[float64][Size][400.0]>
                 <[float64][Falloff][8.0]>
             >
+            <[graphics_conelight][LandingLightWideCone][]
+                <[uint32][PositionID][LeftWing.R]>
+                <[uint32][OrientationID][LeftWing.Q]>
+                <[tmvector3d][R0][0.279790 5.413740 1.249140]>
+                <[tmvector3d][X0][ 1.0 0.0 0.0 ]>
+                <[tmvector3d][Color][ 1.0 0.8 0.6 1.0 ]>
+                <[float64][Brightness][4.0]>
+                <[float64][ConeCenter][1.0]>
+                <[float64][ConeCutoff][-0.8]>
+                <[string8][InputModulation][LandingLightOn.Output]>
+                <[float64][Size][40.0]>
+                <[float64][Falloff][8.0]>
+            >			
             // navigation lights
             <[graphics_input][NavigationLightOn][]
                 <[uint32][InputID][NavigationLightOn.Output]>
@@ -1282,11 +1295,12 @@
             >
             <[graphics_input][RudderInput][]
                 <[uint32][InputID][ServoRudder.Output]>
+                <[float64][Scaling][-0.453786]>				
             >
             <[graphics_rotation][RudderRotate][]
                 <[string8][Input][RudderInput.Output]>
-                <[tmvector3d][Axis][ 0.308919 -1.2e-05 -0.951088 ]>
-                <[tmvector3d][Pivot][-5.107525 0.000007 0.880466]>
+                <[tmvector3d][Axis][ 0.308919 0.0 -0.951088 ]>
+                <[tmvector3d][Pivot][-5.107525 0.0 0.880466]>
             >
             <[graphics_pointlight][TailNavLight][]
                 <[uint32][PositionID][Fuselage.R]>
@@ -1771,20 +1785,20 @@
 
 		// wings
 
-            <[hingedbodygraphics][wings_1896_18][]
+            <[hingedbodygraphics][Rudder][]
                 <[string8][GeometryList][ Wings18 Wings123018 Wings189618 BeaconGlass ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputID][ServoRudder.Output]>
-                <[tmvector3d][Axis][ 0.308919 -1.2e-05 -0.951088 ]>
-                <[tmvector3d][Pivot][-5.107525 0.000007 0.880466]>
+                <[tmvector3d][Axis][ 0.308919 0.0 -0.951088 ]>
+                <[tmvector3d][Pivot][-5.107525 0.0 0.880466]>
             >
             <[rigidbodygraphics][wings_3168_18][]
                 <[string8][GeometryList][ Wings236718 Wings306018 Wings306618 Wings316818 Wings510018 Wings1789318 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
             >
-            <[hingedbodygraphics][wings_4872_18][]
+            <[hingedbodygraphics][Elevator][]
                 <[string8][GeometryList][ Wings424818 Wings453018 Wings484218 Wings487218 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>

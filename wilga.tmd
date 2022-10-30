@@ -27,7 +27,7 @@
                 <[bool][InCockpit][true]>
             >
             <[camera_head][CameraCoPilot][]
-                <[string8][Tags][cockpit copilot right]>
+                <[string8][Tags][cockpit pilot right]>
                 <[string8][Body][Fuselage]>
                 <[tmvector3d][R0][ -0.0250 -0.2743 0.7925 ]>
                 <[tmvector3d][Direction][ 0.98 0.0 -0.2 ]>
@@ -1744,7 +1744,7 @@
                 <[uint32][DeformationID][LeftWheelHull.Deformation]>
                 <[float64][Radius][0.25]>
                 <[float64][RimRadius][0.11]>
-                <[float64][Pivot][1.0 1.393 -1.4]>
+                <[tmvector3d][Pivot][1.0 1.393 -1.4]>
                 <[tmvector3d][Axis][ 0.0 1.0 0.0 ]>
             >
 
@@ -1779,7 +1779,7 @@
                 <[uint32][DeformationID][RightWheelHull.Deformation]>
                 <[float64][Radius][0.25]>
                 <[float64][RimRadius][0.11]>
-                <[float64][Pivot][1.0 -1.393 -1.4]>
+                <[tmvector3d][Pivot][1.0 -1.393 -1.4]>
                 <[tmvector3d][Axis][ 0.0 1.0 0.0 ]>
             >
 

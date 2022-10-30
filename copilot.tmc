@@ -1,0 +1,60 @@
+<[file][][]
+    <[hints][][]
+        // Dornier DO27
+        <[float64][MaximumTakeOffMass][1570.0]>
+        <[float64][WingSpan][12.0]>
+        <[float64][WingArea][19.4]>
+        <[float64][HeightOffset][0.18]>
+        <[float64][ApproachSpeed][17.5]>
+        <[float64][PatternSpeed][29.0]>
+        <[float64][InitialClimbSpeed][31.0]>
+        <[copilot_flap_info_list][FlapInfo][]
+           <[copilot_flap_info][Flap0][]
+              <[float64][FlapPosition][0.0]>
+              <[float64][MinimumSpeed][22.0]>
+              <[float64][OptimumSpeed][55.5]>
+              <[float64][MaximumSpeed][65.0]>
+              <[bool][TakeOff][true]>
+          //    <[bool][Landing][true]>
+           >
+           <[copilot_flap_info][Flap10][]
+              <[float64][FlapPosition][0.333]>
+              <[float64][MinimumSpeed][20.5]>
+              <[float64][OptimumSpeed][29.0]>
+              <[float64][MaximumSpeed][35.5]>
+              <[bool][TakeOff][true]>
+              <[bool][Landing][true]>
+           >
+           <[copilot_flap_info][Flap20][]
+              <[float64][FlapPosition][0.667]>
+              <[float64][MinimumSpeed][17.5]>
+              <[float64][OptimumSpeed][29.0]>
+              <[float64][MaximumSpeed][35.5]>
+              <[bool][Landing][true]>
+           >
+           <[copilot_flap_info][FlapFull][]
+              <[float64][FlapPosition][1.0]>
+              <[float64][MinimumSpeed][15.5]>
+              <[float64][OptimumSpeed][28.0]>
+              <[float64][MaximumSpeed][35.5]>
+              <[bool][Landing][true]>
+           >
+        >
+        <[string8][AutoPilotType][]>
+        <[int][EngineCount][1]>
+        <[bool][Piston][true]>
+        <[bool][GeneralAviation][true]>
+        <[bool][Aerobatic][true]>
+        <[bool][TailDragger][true]>
+        <[bool][RudderTrimRequired][true]>
+        <[float64][PitchTrimTakeOff][-0.18]>
+        <[float64][AileronGain] [1.0]>
+        <[float64][ElevatorGain][2.0]>
+        <[float64][RudderGain]  [1.0]>
+        <[float64][RudderCrossWind][1.0]>
+        <[float64][RudderTakeOff][0.05]>
+        <[float64][FlareHeightScaling][0.5]>
+        <[float64][FlareExpectedNoseDrop][0.2]>
+        <[float64][StarterMaximumTime][3.0]>
+    >
+>

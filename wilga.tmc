@@ -13,15 +13,15 @@
             <[localized_text][][]
                 <[string8][Language][de]>
                 <[string8][Text][Die PZL-104 Wilga (Pirol) ist ein einmotoriges polnisches Mehrzweckflugzeug der Państwowe Zakłady Lotnicze (Staatliche Luftfahrt-Werke) mit STOL-Fähigkeit. Genutzt wird sie unter anderem als Agrar-, Sanitäts-, Reise-, Schlepp- und Schulflugzeug. Für Aerofly FS4 von Krzysztof Kaniewski. 3d-Modell erstellt von Robert Pearsons.]>
-			>			
+			>
         >
 		<[float64][WingSpan][11.2]>
 		<[float64][MaximumAirspeed][70.2]>
-		<[float64][MaximumSpeed][70.2]>		
+		<[float64][MaximumSpeed][70.2]>
 		<[float64][MinimumAirspeed][21.5]>
         <[float64][ApproachAirspeed][33.3]>
         <[float64][CruiseAirspeed][55.6]>
-        <[float64][CruiseSpeed][61.5]>		
+        <[float64][CruiseSpeed][61.5]>
 		<[tmvector2d][NormalAirspeedRange][ 21.5 43.2 ]>
 		<[tmvector2d][CautionAirspeedRange][ 43.2 61.5 ]>
 		<[tmvector2d][FlapAirspeedRange][ 21.5 35.1 ]>
@@ -33,7 +33,7 @@
         <[uint][UnitsBuilt][1000]>
         <[uint][EngineCount][1]>
         <[uint][Year][1962]>
-        <[tmvector2d][FlapSettings][ (0.0 0.0) (0.5 0.366519) (1.0 0.767945) ]>		
+        <[tmvector2d][FlapSettings][ (0.0 0.0) (0.5 0.366519) (1.0 0.767945) ]>
         <[string8][Tags][ airplane piston general_aviation gear taildragger flaps short_takeoff ]>
 		<[string8][Pilot][pilot_eric]>
     >

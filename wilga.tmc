@@ -1,7 +1,7 @@
 ﻿<[file][][]
     <[object][][]
         <[int][Version][220]>
-        <[vec32array][ContactSpheres][ ( 1.0 1.4 -1.4 0.25) ( 1.0 -1.4 -1.4 0.25) ( -5.76 0.0 -0.77  0.128) ]>
+        <[vec32array][ContactSpheres][ ( 1.0 1.4 -1.4 0.25) ( 1.0 -1.4 -1.4 0.25) ( -5.76 0.0 -0.774  0.128) ]>
         <[string8][ICAO][PZL4]>
         <[string8][DisplayName][PZL-104 Wilga]>
         <[string8][DisplayNameFull][PZL-104 Wilga]>

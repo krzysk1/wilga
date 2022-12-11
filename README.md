@@ -1,9 +1,25 @@
 # wilga
 PZL-104 Wilga (Golden Oriole) is a Polish designed and built short-takeoff-and-landing (STOL) Civil Aviation utility aircraft manufactured by PZL "Warszawa-Okęcie". The Wilga has evolved through many ever-improving versions during its continuous production run from 1962 to 2006, when the European Aeronautic Defence and Space Company (EADS) announced on their website that they decided to stop the production of this aircraft. 
 
-
+This is free add-on for Aerofly FS4 created by Krzysztof Kaniewski with the Aerofly FS4 SDK.
 Original 3D model created by Robert Pearsons.
 
+ Some features may not work as intended and this aircraft could crash your AeroflyF S4. 
+ Use it at your own risk!
+
+# Installation
+
+1. Unzip file and move the folder "wilga" into the C:\Users\~\Documents\Aerofly FS 4\aircraft folder.
+
+# Uninstall
+
+1. Delete the folder "wilga".
+
+# TO DO
+
+1. animated gauges
+
+# Resources
 
 The PZL-104 Wilga was first flown in 1962, and the variant modeled - the Wilga 80 - was first flown in 1979, and was a (successful) attempt to obtain entry into the US market. The Wilga 80 is equipped with a 260hp Russian-built radial engine that rotates CCW when viewed from behind. over 1,000 Wilga-35 and Wilga 80s have been built, making the Wilga the most prolific of all Polish-built aircraft. Even the Canadian government was considering buying the Wilg for training purposes, but ran into a lack of support from EADS (the owner of PZL) This STOL utility plane has a step for parachuters and a tow hitch for gliders, and her prominent control stick and nimble and forgiving handling qualities make her a joy to fly - if only virtually.
 

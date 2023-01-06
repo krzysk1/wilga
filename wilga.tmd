@@ -425,7 +425,7 @@
                 <[float64array][StationFlapFraction][ 0.0 0.22 0.22 0.0 ]>
                 <[float64][AspectRatioMultiplier][2.0]>
                 <[string8][AirfoilRoot][AirfoilRoot]>
-                <[string8][AirfoilTip][AirfoilRoot]>
+                <[string8][AirfoilTip][AirfoilTip]>
                 <[float64][Flap0Area][0.22]>
                 <[string8][PropwashInput][Propeller.GetWash]>
                 <[float64][PropwashPercentage][0.05]>
@@ -448,9 +448,9 @@
                 <[float64array][StationIncidence]   [ 0.06981 0.06981 0.06981 0.06981 ]>
                 <[uint32array][StationFlap]         [ 2 1 0 0 ]>
                 <[float64array][StationFlapFraction][ 0.22 0.22 0.0 0.0 ]>
-                <[float64][AspectRatioMultiplier][4.0]>
+                <[float64][AspectRatioMultiplier][2.0]>
                 <[string8][AirfoilRoot][AirfoilRoot]>
-                <[string8][AirfoilTip][AirfoilRoot]>
+                <[string8][AirfoilTip][AirfoilTip]>
                 <[float64][Flap0Area][0.22]>
                 <[string8][PropwashInput][Propeller.GetWash]>
                 <[float64][PropwashPercentage][0.05]>

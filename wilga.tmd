@@ -4,7 +4,7 @@
 	// Plane: PZL-104 Wilga for Aerofly FS4
 	// Compilation: Krzysztof Kaniewski
 	// 3D Design: Robert Pearsons
-	// Date: Aug 2014 - Aug 2022; Jan 2023
+	// Date: Aug 2014 - Aug 2022; Jan 2023; May 2023
 	//-------------------------------------
 
     <[modelmanager][][]
@@ -123,20 +123,19 @@
                 <[float64][D][30120]>
                 <[string8][Body][Fuselage]>
                 <[string8][Geometry][Fuselage221944]>
+                <[bool][InstantCrash][true]>
             >
             <[collisionhull][CollisionLeftWing][]
                 <[float64][K][532000]>
                 <[float64][D][7980]>
                 <[string8][Body][LeftWing]>
                 <[string8][Geometry][Wings2667618]>
-                <[bool][CrashOnContact][true]>
             >
             <[collisionhull][CollisionRightWing][]
                 <[float64][K][532000]>
                 <[float64][D][7980]>
                 <[string8][Body][RightWing]>
                 <[string8][Geometry][Wings2667718]>
-                <[bool][CrashOnContact][true]>
             >
             <[rigidbody][LeftGear][]
                 <[float64][Mass][15.0]>
@@ -272,7 +271,6 @@
                 <[float64][D][15000]>
                 <[float64][StaticFrictionCoefficient][1.0]>
                 <[float64][KineticFrictionCoefficient][0.4]>
-                <[bool][Blade][false]>
             >
             <[collisionhull][CollisionElevator][]
                 <[string8][Body][Fuselage]>
@@ -281,7 +279,6 @@
                 <[float64][D][15000]>
                 <[float64][StaticFrictionCoefficient][1.0]>
                 <[float64][KineticFrictionCoefficient][0.4]>
-                <[bool][Blade][false]>
             >
             <[collisionhull][CollisionTailGear][]
                 <[string8][Body][TailGear]>
@@ -290,7 +287,6 @@
                 <[float64][D][200.0]>
                 <[float64][StaticFrictionCoefficient][1.5]>
                 <[float64][KineticFrictionCoefficient][0.9]>
-                <[bool][Blade][false]>
             >
             <[collisionhull][CollisionLeftGear][]
                 <[string8][Body][LeftGear]>
@@ -299,7 +295,6 @@
                 <[float64][D][300.0]>
                 <[float64][StaticFrictionCoefficient][1.0]>
                 <[float64][KineticFrictionCoefficient][0.4]>
-                <[bool][Blade][false]>
             >
             <[collisionhull][CollisionRightGear][]
                 <[string8][Body][RightGear]>
@@ -308,7 +303,6 @@
                 <[float64][D][300.0]>
                 <[float64][StaticFrictionCoefficient][1.0]>
                 <[float64][KineticFrictionCoefficient][0.4]>
-                <[bool][Blade][false]>
             >
             <[airfoil][AirfoilHorizontalStabilizer][]
                 <[float64][Cl0][0.0]>

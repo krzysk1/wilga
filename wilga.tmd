@@ -4634,6 +4634,7 @@
                              <[tmvector3d][X0][ 26.0060 7.1910 -2.4400 ]>
                              <[tmvector3d][Y0][ -5.0363 9.9877 -24.2428 ]>
                              <[tmvector3d][Z0][ -5.5352 23.7246 10.9241 ]>
+                             <[int32][Type][1]>
                          >
                          <[bone][element][67]
                              <[string8][Name][Bip01 L Hand]>
@@ -5085,7 +5086,6 @@
 
                 >
             >
-
         >
         <[pointer_list_tmsound][SoundObjects][]
 
@@ -5104,8 +5104,9 @@
             <[soundloop][FlightVolumeLoop][]
                 <[string8][InputVolume][FlightVolume.Output]>
                 <[string8][InputPitch][FlightPitch.Output]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][VelocityID][Fuselage.V]>
+                <[uint32][PositionID]   [Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+                <[uint32][VelocityID]   [Fuselage.V]>
                 <[string8][SoundFile][wind.wav]>
                 <[bool][External][false]>
             >
@@ -5133,8 +5134,9 @@
             <[soundloop][SideSlipLoop][]
                 <[string8][InputVolume][SideSlipVolume.Output]>
                 <[string8][InputPitch][SideSlipPitch.Output]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][VelocityID][Fuselage.V]>
+                <[uint32][PositionID]   [Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+                <[uint32][VelocityID]   [Fuselage.V]>
                 <[string8][SoundFile][sideslip.wav]>
                 <[bool][External][false]>
             >
@@ -5151,8 +5153,9 @@
             <[soundloop][RPMWindLoop][]
                 <[string8][InputVolume][RPMVolumeWind.Output]>
                 <[string8][InputPitch][RPMPitchWind.Output]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][VelocityID][Fuselage.V]>
+                <[uint32][PositionID]   [Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+                <[uint32][VelocityID]   [Fuselage.V]>
                 <[string8][SoundFile][prop1.wav]>
                 <[tmvector3d][R0][1.9 0.0 0.0]>
             >
@@ -5173,8 +5176,9 @@
                 <[string8][InputTrigger][IgnitionSoundInput.Output]>
                 <[string8][InputVolume][VolumeIgnition.Output]>
                 <[string8][InputPitch][PitchIgnition.Output]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][VelocityID][Fuselage.V]>
+                <[uint32][PositionID]   [Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+                <[uint32][VelocityID]   [Fuselage.V]>
                 <[string8][SoundFile][star1.wav]>
                 <[tmvector3d][R0][1.7 0.0 0.0]>
             >
@@ -5194,8 +5198,9 @@
             <[soundloop][RPMRunLoop][]
                 <[string8][InputVolume][RPMVolumeRun.Output]>
                 <[string8][InputPitch][RPMPitchRun.Output]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][VelocityID][Fuselage.V]>
+                <[uint32][PositionID]   [Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+                <[uint32][VelocityID]   [Fuselage.V]>
                 <[string8][SoundFile][engn1.wav]>
                 <[tmvector3d][R0][1.7 0.0 0.0]>
             >
@@ -5255,8 +5260,9 @@
             <[soundloop][GroundRollLeft][]
                 <[string8][InputVolume][GroundRollVolumeLeft.Output]>
                 <[string8][InputPitch][GroundRollPitchLeft.Output]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][VelocityID][Fuselage.V]>
+                <[uint32][PositionID]   [Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+                <[uint32][VelocityID]   [Fuselage.V]>
                 <[string8][SoundFile][roll_ground.wav]>
             >
             <[soundinput][GroundRollLoadRight][]
@@ -5284,8 +5290,9 @@
             <[soundloop][GroundRollRight][]
                 <[string8][InputVolume][GroundRollVolumeRight.Output]>
                 <[string8][InputPitch][GroundRollPitchRight.Output]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][VelocityID][Fuselage.V]>
+                <[uint32][PositionID]   [Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+                <[uint32][VelocityID]   [Fuselage.V]>
                 <[string8][SoundFile][roll_ground.wav]>
             >
             // flap lever
@@ -5293,8 +5300,9 @@
                 <[string8][InputID][FlapLeverPullSound.Output]>
             >
             <[sound_multi][SoundFlapLeverPull][]
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][VelocityID][Fuselage.V]>
+                <[uint32][PositionID]   [Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+                <[uint32][VelocityID]   [Fuselage.V]>
                 <[string8][InputTrigger][FlapLeverPullSound.Output]>
                 <[string8][InputVolume] [0.01]>
                 <[string8][InputPitch]  [0.6]>
@@ -5305,8 +5313,9 @@
                 <[string8][InputID][FlapLeverReleaseSound.Output]>
             >
             <[sound_multi][SoundFlapLeverRelease][]
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][VelocityID][Fuselage.V]>
+                <[uint32][PositionID]   [Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+                <[uint32][VelocityID]   [Fuselage.V]>
                 <[string8][InputTrigger][FlapLeverReleaseSound.Output]>
                 <[string8][InputVolume] [0.4]>
                 <[string8][InputPitch]  [1.2]>
@@ -5318,8 +5327,9 @@
                 <[uint32][InputID][ButtonSound.Output]>
             >
             <[sound_multi][SoundButton][]
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][VelocityID][Fuselage.V]>
+                <[uint32][PositionID]   [Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+                <[uint32][VelocityID]   [Fuselage.V]>
                 <[string8][InputTrigger][ButtonSound.Output]>
                 <[string8][InputVolume][0.6]>
                 <[string8][InputPitch][1.0]>
@@ -5330,8 +5340,9 @@
                 <[uint32][InputID][SwitchSound.Output]>
             >
             <[sound_multi][SoundSwitch][]
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][VelocityID][Fuselage.V]>
+                <[uint32][PositionID]   [Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+                <[uint32][VelocityID]   [Fuselage.V]>
                 <[string8][InputTrigger][SwitchSound.Output]>
                 <[string8][InputVolume][0.6]>
                 <[string8][InputPitch][1.5]>

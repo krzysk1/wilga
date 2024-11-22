@@ -4,51 +4,52 @@
         <[float64][MaximumTakeOffMass][1300.0]>
         <[float64][WingSpan][11.12]>
         <[float64][WingArea][15.5]>
-        <[float64][HeightOffset][-1.4]>
-        <[float64][ApproachSpeed][17.5]>
-        <[float64][PatternSpeed][29.0]>
+        <[float64][HeightOffset][-1.6]>
+        <[float64][ApproachSpeed][25.5]>
+        <[float64][PatternSpeed][37.8]>
         <[float64][InitialClimbSpeed][31.0]>
         <[copilot_flap_info_list][FlapInfo][]
            <[copilot_flap_info][Flap0][]
               <[float64][FlapPosition][0.0]>
-              <[float64][MinimumSpeed][22.0]>
-              <[float64][OptimumSpeed][55.5]>
-              <[float64][MaximumSpeed][65.0]>
+              <[float64][MinimumSpeed][27.8]>
+              <[float64][OptimumSpeed][55.0]>
+              <[float64][MaximumSpeed][61.6]>
               <[bool][TakeOff][true]>
           //    <[bool][Landing][true]>
            >
            <[copilot_flap_info][FlapApproach][]
-              <[float64][FlapPosition][0.5]>
+              <[float64][FlapPosition][0.366519]>
               <[float64][MinimumSpeed][20.5]>
               <[float64][OptimumSpeed][29.0]>
-              <[float64][MaximumSpeed][35.5]>
+              <[float64][MaximumSpeed][35.1]>
               <[bool][TakeOff][true]>
               <[bool][Landing][true]>
            >
            <[copilot_flap_info][FlapFull][]
-              <[float64][FlapPosition][1.0]>
-              <[float64][MinimumSpeed][15.5]>
+              <[float64][FlapPosition][0.767945]>
+              <[float64][MinimumSpeed][17.2]>
               <[float64][OptimumSpeed][28.0]>
-              <[float64][MaximumSpeed][35.5]>
+              <[float64][MaximumSpeed][35.1]>
               <[bool][Landing][true]>
            >
         >
-        <[string8][AutoPilotType][]>
         <[int][EngineCount][1]>
         <[bool][Piston][true]>
         <[bool][GeneralAviation][true]>
-        <[bool][Aerobatic][true]>
         <[bool][TailDragger][true]>
         <[bool][RudderTrimRequired][true]>
-        <[float64][PitchTrimTakeOff][-0.18]>
-        <[float64][AileronGain] [1.0]>
-        <[float64][ElevatorGain][2.0]>
-        <[float64][RudderGain]  [1.0]>
-        <[float64][RudderCrossWind][1.0]>
-        <[float64][RudderTakeOff][0.05]>
-        <[float64][FlareHeightScaling][0.5]>
-        <[float64][FlareExpectedNoseDrop][0.2]>
-        <[float64][GainSideSlipRoll][0.6]>
+        <[float64][PitchTrimTakeOff][-0.1]>
+        <[float64][ElevatorGain][0.6]>
+        <[float64][AileronGain][4.0]>
+        <[float64][RudderGain][0.8]>
+        <[float64][RudderSteeringGain][0.4]>		
+        <[float64][RudderCrossWind][1.5]>
+        <[float64][RudderTakeOff][-0.12]>
+        <[float64][FlareHeightScaling][0.8]>
+        <[float64][FlareExpectedNoseDrop][2.5]>
+        <[float64][GainSideSlipRoll][0.5]>
         <[float64][StarterMaximumTime][3.0]>
+        <[float64][RotationSpeedNormalizedClimb] [0.8723]>
+        <[float64][RotationSpeedNormalizedCruise][0.7915]>
     >
 >

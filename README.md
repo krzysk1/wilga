@@ -7,6 +7,8 @@ Original 3D model created by Robert Pearsons.
  Some features may not work as intended and this aircraft could crash your AeroflyF S4. 
  Use it at your own risk!
 
+THERE ARE NO PLANS TO DEVELOP THIS MODEL!
+
 # Installation
 
 1. Unzip file and move the folder "wilga" into the C:\Users\~\Documents\Aerofly FS 4\aircraft folder.
@@ -14,10 +16,6 @@ Original 3D model created by Robert Pearsons.
 # Uninstall
 
 1. Delete the folder "wilga".
-
-# TO DO
-
-1. animated gauges
 
 # Resources
 

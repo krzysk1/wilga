@@ -79,7 +79,3 @@ This is for information purposes only. In case you have not seen this, there is 
 http://www.thaiflyingclub.com/linkwilga.html
 http://www.thaiflyingclub.com/linkwilgachecklist.html
 http://www.thaiflyingclub.com/linkwilgaarticle.html
-In case this site goes away some day here are pdfs of the relevant web pages
-PZL-104 Wilga Checklist (abbreviated).pdf
-WILGA ARTICLE.pdf
-Maybe someday Wilga model can be more accurately tuned to reflect this information.

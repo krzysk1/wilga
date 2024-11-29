@@ -76,3 +76,12 @@ Landing over 50' obstacel (grass) 509 ft
 Manufacturer PZL (Polish Aviation Enterprise), Warszawa-Okecie (also known as Pezetel), Al. Krakowska 110/114, 02-256 Warszawa-Okecie, Poland 
 
 Aircraft Technical Data & Specifications http://www.airliners.net/aircraft-data/pzl-warszawaokecie-pzl104-wilga/322
+
+This is for information purposes only. In case you have not seen this, there is the Thai Flying Club website with information on the Wilga 80 including a Wilga Checklist (which lists V speeds!). Really wish there was a indicator for engine rpm or prop rpm.
+http://www.thaiflyingclub.com/linkwilga.html
+http://www.thaiflyingclub.com/linkwilgachecklist.html
+http://www.thaiflyingclub.com/linkwilgaarticle.html
+In case this site goes away some day here are pdfs of the relevant web pages
+PZL-104 Wilga Checklist (abbreviated).pdf
+WILGA ARTICLE.pdf
+Maybe someday Wilga model can be more accurately tuned to reflect this information.

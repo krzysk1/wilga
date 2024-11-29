@@ -8,7 +8,7 @@
         <[list_localized_text][Descriptions][]
             <[localized_text][element][0]
                 <[string8u][Language][en]>
-                <[string8][Text][PZL-104 Wilga (Golden Oriole) is a Polish designed and built short-takeoff-and-landing (STOL) civil aviation utility aircraft manufactured by PZL "Warszawa-Okęcie". The Wilga has evolved through many ever-improving versions during its continuous production run from 1962 to 2006. The type was largely used by civil operators; those military air services that did fly the type typically used it as a trainer and liaison aircraft. For Aerofly FS4 made by Krzysztof Kaniewski. Original 3D model made by Robert Pearsons.]>
+                <[string8][Text][PZL-104 Wilga (Oriole) is a Polish designed and built short-takeoff-and-landing (STOL) civil aviation utility aircraft manufactured by PZL "Warszawa-Okęcie". The Wilga has evolved through many ever-improving versions during its continuous production run from 1962 to 2006. The type was largely used by civil operators; those military air services that did fly the type typically used it as a trainer and liaison aircraft. For Aerofly FS4 made by Krzysztof Kaniewski. Original 3D model made by Robert Pearsons.]>
             >
             <[localized_text][element][1]
                 <[string8u][Language][de]>
@@ -16,7 +16,7 @@
 			>
             <[localized_text][element][2]
                 <[string8u][Language][pl]>
-                <[string8][Text][PZL-104 Wilga (Złota Wilga) to zaprojektowany i zbudowany w Polsce cywilny samolot użytkowy krótkiego startu i lądowania (STOL) produkowany przez PZL „Warszawa-Okęcie”. Wilga ewoluowała przez wiele stale ulepszanych wersji podczas ciągłej produkcji w latach 1962-2006. Typ ten był w dużej mierze używany przez operatorów cywilnych; wojskowe służby lotnicze, które latały na tym typie, zwykle używały go jako samolotu szkoleniowego i łącznikowego. Dla Aerofly FS4 wykonany przez Krzysztofa Kaniewskiego. Oryginalny model 3D wykonany przez Roberta Pearsonsa.]>
+                <[string8][Text][PZL-104 Wilga to zaprojektowany i zbudowany w Polsce cywilny samolot użytkowy krótkiego startu i lądowania (STOL) produkowany przez PZL „Warszawa-Okęcie”. Wilga ewoluowała przez wiele stale ulepszanych wersji podczas ciągłej produkcji w latach 1962-2006. Typ ten był w dużej mierze używany przez operatorów cywilnych; wojskowe służby lotnicze, które latały na tym typie, zwykle używały go jako samolotu szkoleniowego i łącznikowego. Dla Aerofly FS4 wykonany przez Krzysztofa Kaniewskiego. Oryginalny model 3D wykonany przez Roberta Pearsonsa.]>
 			>
         >
 		<[float64][WingSpan][11.2]>

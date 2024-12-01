@@ -19,24 +19,24 @@
                 <[string8][Text][PZL-104 Wilga to zaprojektowany i zbudowany w Polsce cywilny samolot użytkowy krótkiego startu i lądowania (STOL) produkowany przez PZL „Warszawa-Okęcie”. Wilga ewoluowała przez wiele stale ulepszanych wersji podczas ciągłej produkcji w latach 1962-2006. Typ ten był w dużej mierze używany przez operatorów cywilnych; wojskowe służby lotnicze, które latały na tym typie, zwykle używały go jako samolotu szkoleniowego i łącznikowego. Dla Aerofly FS4 wykonany przez Krzysztofa Kaniewskiego. Oryginalny model 3D wykonany przez Roberta Pearsonsa.]>
 			>
         >
-		<[float64][WingSpan][11.2]>
-		<[float64][MaximumAirspeed][70.2]>
-		<[float64][MaximumSpeed][70.2]>
-		<[float64][MinimumAirspeed][21.5]>
-        <[float64][ApproachAirspeed][33.3]>
-        <[float64][CruiseAirspeed][55.6]>
-        <[float64][CruiseSpeed][61.5]>
-		<[vector2_float64][NormalAirspeedRange][ 21.5 43.2 ]>
-		<[vector2_float64][CautionAirspeedRange][ 43.2 61.5 ]>
-		<[vector2_float64][FlapAirspeedRange][ 21.5 35.1 ]>
-        <[float64][MaximumAltitude][4040.0]>
-        <[float64][CruiseAltitude][1826.0]>
         <[float64][MaximumTakeoffMass][1300.0]>
-        <[float64][EnginePower][194000.0]>
-        <[float64][MaximumRange][670000.0]>
-        <[uint32][UnitsBuilt][1000]>
-        <[uint32][EngineCount][1]>
-        <[uint32][Year][1962]>
+		<[float64][WingSpan]          [11.2]>
+        <[uint32] [Year]              [1962]>
+        <[uint32] [UnitsBuilt]        [1000]>
+        <[uint32] [EngineCount]       [1]>
+        <[float64][EnginePower]       [194000.0]>
+		<[float64][MaximumAirspeed]   [70.2]>
+		<[float64][MaximumSpeed]      [70.2]>
+		<[float64][MinimumAirspeed]   [21.5]>
+        <[float64][ApproachAirspeed]  [33.3]>
+        <[float64][CruiseAirspeed]    [55.6]>
+        <[float64][CruiseSpeed]       [61.5]>
+        <[float64][MaximumAltitude]   [4040.0]>
+        <[float64][CruiseAltitude]    [1826.0]>
+        <[float64][MaximumRange]      [670000.0]>
+		<[vector2_float64][FlapAirspeedRange]   [ 21.5 35.1 ]>
+		<[vector2_float64][NormalAirspeedRange] [ 21.5 43.2 ]>
+		<[vector2_float64][CautionAirspeedRange][ 43.2 61.5 ]>
         <[list_vector2_float64][FlapSettings][ (0.0 0.0) (0.5 0.366519) (1.0 0.767945) ]>
         <[string8][Tags][ airplane piston general_aviation gear tailgear flaps short_takeoff ]>
 		<[string8][Pilot][pilot_eric]>

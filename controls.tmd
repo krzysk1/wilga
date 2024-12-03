@@ -9,7 +9,7 @@
             >
             <[control_input][StickAileron][]
                 <[uint32][InputID][AileronPosition.Output]>
-                <[float64][Scaling][0.436332]>
+                <[float64][Scaling][0.174533]>
             >
             <[control_rotation][ElevatorTransform][]
                 <[string8][Input][StickElevator.Output]>
@@ -20,7 +20,7 @@
                 <[string8][InputTransform][ElevatorTransform.Output]>
                 <[string8][Input][StickAileron.Output]>
                 <[tmvector3d][Axis][1.0 0.0 0.0]>
-                <[tmvector3d][Pivot][0.554730 0.275 0.294540]>
+                <[tmvector3d][Pivot][0.723080 0.275 -0.107614]>
             >
             <[control_cylinder][StickGrip][114]
                 <[string8][Type][stick]>
@@ -47,8 +47,8 @@
             <[control_rotation][CopilotStickTransform][]
                 <[string8][InputTransform][ElevatorTransform.Output]>
                 <[string8][Input][StickAileron.Output]>
-                <[tmvector3d][Axis][1.0 -0.0 0.0]>
-                <[tmvector3d][Pivot][0.554730 -0.275 0.294540]>
+                <[tmvector3d][Axis][1.0 0.0 0.0]>
+                <[tmvector3d][Pivot][0.723080 -0.275 -0.107614]>
             >
             <[control_cylinder][CopilotStickGrip][114]
                 <[string8][Type][stick]>
